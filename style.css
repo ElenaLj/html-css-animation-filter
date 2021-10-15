@@ -91,9 +91,17 @@
     filter: sepia(80%) grayscale(30%);
 }
 
+/* *** esercizio 9 *** */
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    transition: all 1s ease-out 0s;
+}
+
+.ex-9-img:hover {
+    border-radius: 10px;
+    filter: grayscale(70%) sepia(50%);
+    transform: scale(1.5);
 }
 .ex-10-icon {
     font-size: 60px;
