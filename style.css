@@ -107,14 +107,14 @@
 /* *** esercizio 10 *** */
 .ex-10-icon {
     font-size: 60px;
-    animation-name: spin;
+    animation-name: reverse-spin;
     animation-duration: 1s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: reverse;
 }
 
-@keyframes spin {
+@keyframes reverse-spin {
     0%{
         transform: rotate(0deg);
         }
@@ -131,9 +131,31 @@
         transform: rotate(360deg);
         }
 }
+
+/* *** esercizio 11 *** */
 .ex-11-icon {
     font-size: 60px;
 }
+
+.ex-11-icon:hover {
+    animation-name: spin; 
+    animation-duration: 2s;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(270deg);
+    }
+
+    80% {
+        transform: rotate(0deg);
+    }
+}
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
